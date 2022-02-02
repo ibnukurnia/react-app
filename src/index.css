@@ -1,13 +1,56 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+*,
+*::after,
+*::before {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+:root {
+  --primary-color: #193b55;
+  --text-primary-color: #fcfcfc;
+  --text-secondary-color: #ffbe36;
+  --secondary-color: #ff740f;
+  --ternary-color: #e50058;
+}
+
+body {
+  background-color: var(--primary-color) !important;
+  color: var(--text-primary-color) !important;
+}
+
+.home_section span {
+  font-size: 14px;
+  color: var(--text-secondary-color);
+}
+
+.about_desc span,
+.about_detail span {
+  color: var(--text-secondary-color);
+}
+
+.card_skills {
+  width: 100%;
+  border-radius: 15px;
+  border: 1px solid var(--ternary-color);
+}
+
+.skill {
+  margin-top: 30px;
+}
+.skill p {
+  margin-bottom: 0;
+}
+
+.skill_item {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.skill_item div {
+  display: flex;
+  align-items: center;
+  gap: 5px;
 }
